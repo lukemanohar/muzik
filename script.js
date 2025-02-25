@@ -3,6 +3,18 @@ document.getElementById("btn").addEventListener("click", function() {
         behavior: "smooth" 
     });
 });
+document.getElementById("btn").addEventListener("click", function() {
+  
+    document.getElementById("pianoimg").scrollIntoView({
+        behavior: "smooth" 
+    });
+
+    setTimeout(function() {
+        document.getElementById("pno").style.opacity = 1; 
+        document.getElementById("pno").style.transition = "opacity 1s"; 
+    }, 600); 
+});
+
 
 const image = document.getElementById('cover'),
     title = document.getElementById('music-title'),
@@ -65,18 +77,14 @@ function togglePlay() {
 
 function playMusic() {
     isPlaying = true;
-    // Change play button icon
     playBtn.classList.replace('fa-play', 'fa-pause');
-    // Set button hover title
     playBtn.setAttribute('title', 'Pause');
     music.play();
 }
 
 function pauseMusic() {
     isPlaying = false;
-    // Change pause button icon
     playBtn.classList.replace('fa-pause', 'fa-play');
-    // Set button hover title
     playBtn.setAttribute('title', 'Play');
     music.pause();
 }
