@@ -70,14 +70,14 @@ body {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
-    font-family: fantasy;
+    font-family: cursive;
 }
 #ppimg{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     text-align: left;
-    font-family: fantasy;
+    font-family: cursive;
     margin-top: 0px;
 }
 
@@ -208,7 +208,7 @@ h3 {
 
 #thanks {
     color: white;
-    font-family:fantasy;
+    font-family:cursive;
     margin-left: 5%;
 }
 
@@ -216,7 +216,7 @@ h3 {
     color: rgb(255, 255, 255);
     margin-left: 58%;
     margin-top: 200px;
-    font-family:fantasy;
+    font-family:'Times New Roman', Times, serif;
 }
 a{
     color: white;
@@ -241,10 +241,10 @@ a{
     .intro {
         width: 90%;
         margin-top: 50px;
-        display: flex; /* Add flex display */
-        flex-direction: column; /* Stack children vertically */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
     }
 
     #welcome {
@@ -255,11 +255,11 @@ a{
     #btn {
         width: 80px;
         height: 30px;
-        margin-left: 0; /* Remove left margin */
-        margin-top: 20px; /* Add space between text and button */
-        display: block; /* Make sure the button is block-level */
+        margin-left: 0; 
+        margin-top: 20px; 
+        display: block; 
         margin-right: auto;
-        margin-left: auto; /* Center the button */
+        margin-left: auto; 
     }
 
     .container {
@@ -347,17 +347,19 @@ a{
     #thanks {
         margin-left: 2%;
         font-size: 11px;
+        font-family: fantasy;
     }
 
     #details {
         margin-left: 5%;
         margin-top: 10px;
         font-size: 20px;
-        font-size: 11px;
+        font-size: 20px;
+
     }
 
     #logo {
-        width: 120px;
+        width: 110px;
         height: 120px;
         margin-top: 0;
         margin-left: 1%;
