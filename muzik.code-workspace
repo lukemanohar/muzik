@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Music"
+		},
+		{
+			"path": "../musicplayer"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "muzik"
+	}
+}

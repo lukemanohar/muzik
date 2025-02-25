@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(black, white);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    height: 500px;
+    background-color: black;
+    margin: 150px auto;
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px rgb(109, 108, 108);
+    justify-content: center; 
+    align-items: center; 
+}
+
+#welcome {
+    color: transparent;
+    background: linear-gradient(to right, red, orange, yellow, green);
+    -webkit-background-clip: text;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 0; 
+    font-size: 2rem;
+}
+
+#mtr {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px; 
+}
+
+#btn {
+    color: black;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#btn:hover {
+    scale: 1.5;
+    background-color: yellow;
+}
+
+.gap {
+    width: 100%;
+    height: 200px;
+}
+
+#pianoimg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(39, 9, 9, 0.7)), url('piano.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#pimg {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+}
+#ppimg{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    text-align: left;
+
+}
+
+.piano {
+    width: 100%;
+    height: 900px;
+    margin-top: 4px;
+    background-color:  black;
+}
+
+#pno{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: transparent;
+    background: linear-gradient(to right, red ,  yellow ,blue, );
+    -webkit-background-clip: text;
+
+
+}
+
+.container {
+    margin-top: 60px;
+    background-image:linear-gradient(white,rgb(230, 229, 229)) ;
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    margin-left: 35%;
+}
+
+
+.player-img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 3px;
+    left: 50px;
+}
+
+.player-img img {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.player-img img.active {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 40px 0 0;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.player-progress {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px 35px;
+    height: 6px;
+    width: 90%;
+}
+
+.progress {
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music-duration {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls {
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+}
+
+.fa-solid {
+    font-size: 30px;
+    color: #666;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover {
+    filter: brightness(40%);
+}
+
+.play-button {
+    font-size: 44px;
+    position: relative;
+    top: 3px;
+}
+
+
+.end {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( rgb(0, 0, 0), rgb(58, 11, 92));
+    margin-top: 1px;
+}
+
+#thanks {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+}
+
+#details {
+    color: rgb(255, 255, 255);
+    margin-left: 58%;
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    color: white;
+}
+
+#inst {
+    width: 25px;
+    height: 25px;
+    margin: -5px;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 90%;
+        margin-top: 50px;
+        display: flex; /* Add flex display */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+    }
+
+    #welcome {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #btn {
+        width: 80px;
+        height: 30px;
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add space between text and button */
+        display: block; /* Make sure the button is block-level */
+        margin-right: auto;
+        margin-left: auto; /* Center the button */
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .player-img {
+        width: 100%;
+        height: 300px;
+        left: 0;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    #details {
+        margin-left: 5%;
+        margin-top: 15px;
+    }
+
+    #logo {
+        width: 150px;
+        height: 150px;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #welcome {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    #btn {
+        width: 70px;
+        height: 20px;
+        margin-left: 0; 
+        margin-right: auto;
+        margin-left: auto; 
+        display: block; 
+        margin-top: 40px;
+    }
+
+    .intro {
+        width: 95%;
+        height: auto;
+    }
+
+    #pianoimg {
+        height: 400px;
+    }
+
+    #pimg {
+        margin-top: -10;
+        font-size: 20px;
+    }
+    #ppimg{
+        margin-left: 20px;
+        text-align: left;
+        
+    }
+
+    .container {
+        width: 80%;
+        margin-left: 40px ;
+    }
+    .player-controls{
+        margin-left: -45px;
+    }
+
+    .player-img {
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+
+    h2, h3 {
+        font-size: 18px;
+    }
+
+    #thanks {
+        margin-left: 2%;
+    }
+
+    #details {
+        margin-left: 5%;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+        margin-top: 0;
+        margin-left: 1%;
+    }
+}
